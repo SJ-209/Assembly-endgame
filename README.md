@@ -6,12 +6,12 @@ Assembly Endgame is a word-guessing game inspired by the classic game Hangman. D
 
 ## Features
 
-• Interactive word-guessing gameplay.
-• Keyboard-based letter selection for a seamless user experience.
-• Tracks correct and incorrect guesses dynamically.
-• "Game Over" mechanic when too many incorrect guesses occur.
-• Option to reset the game and start fresh.
-• Random farewell messages for eliminated programming languages.
+- Interactive word-guessing gameplay.
+- Keyboard-based letter selection for a seamless user experience.
+- Tracks correct and incorrect guesses dynamically.
+- "Game Over" mechanic when too many incorrect guesses occur.
+- Option to reset the game and start fresh.
+- Random farewell messages for eliminated programming languages.
 
 ## How to Play
 
@@ -25,31 +25,30 @@ Assembly Endgame is a word-guessing game inspired by the classic game Hangman. D
 
 ## Technologies Used
 
-• React: For building the interactive UI.
-• JavaScript: For game logic and dynamic rendering.
-• CSS: For styling and animations.
+- React: For building the interactive UI.
+- JavaScript: For game logic and dynamic rendering.
+- CSS: For styling and animations.
 
 ## Project Features
 
-1. Dynamic Letter Guessing:
-
-	• Displays letters when guessed correctly.
-	• Tracks incorrect guesses visually on the keyboard.
+1. Dynamic Letter Guessing-
+	- Displays letters when guessed correctly.
+	- Tracks incorrect guesses visually on the keyboard.
 
 2. Keyboard Interaction:
-	• Buttons dynamically update to reflect "correct" or "wrong" states.
-	• Disabled buttons prevent duplicate guesses.
+	- Buttons dynamically update to reflect "correct" or "wrong" states.
+	- Disabled buttons prevent duplicate guesses.
 
 3. Language Elimination:
-	• Incorrect guesses "remove" a language visually from the list.
-	• Random farewell messages (e.g., "RIP, JavaScript!") are displayed for eliminated languages.
+	- Incorrect guesses "remove" a language visually from the list.
+	- Random farewell messages (e.g., "RIP, JavaScript!") are displayed for eliminated languages.
 
 4. Game Over Mechanic:
-	• Ends the game after exceeding the incorrect guess limit.
-	• Displays a "New Game" button to restart.
+	- Ends the game after exceeding the incorrect guess limit.
+	- Displays a "New Game" button to restart.
 
 5. Responsive Design:
-	•Optimized for various screen sizes for a great user experience.
+	- Optimized for various screen sizes for a great user experience.
 
 ## Installation
 
