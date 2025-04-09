@@ -1,15 +1,102 @@
-After weeks of hands-on learning, I’m excited to share that I’ve completed the Scrimba Learn React course — an interactive and project-based journey through modern React fundamentals.
+Assembly Endgame
+Overview
+Assembly Endgame is a word-guessing game inspired by the classic game Hangman. Developed as part of Scrimba's course project, the goal is to guess the hidden word within a limited number of attempts while avoiding incorrect guesses. Each incorrect guess "eliminates" a programming language, and the game is over when all languages are lost.
 
-This course took me from the basics to building full-featured apps through 6 real-world projects and over 170 interactive coding challenges, helping me develop a deep understanding of the React ecosystem.
+Features
+Interactive word-guessing gameplay.
+Keyboard-based letter selection for a seamless user experience.
+Tracks correct and incorrect guesses dynamically.
+"Game Over" mechanic when too many incorrect guesses occur.
+Option to reset the game and start fresh.
+Random farewell messages for eliminated programming languages.
+How to Play
+A random programming-related word is selected (e.g., react).
+You start with all programming languages "active."
+Guess the word one letter at a time by clicking the displayed keyboard buttons.
+Correct Guesses: Revealed in the hidden word.
+Incorrect Guesses: A programming language is eliminated.
+Lose the game if you make too many incorrect guesses.
+Win the game by correctly guessing all letters in the word.
+Technologies Used
+React: For building the interactive UI.
+JavaScript: For game logic and dynamic rendering.
+CSS: For styling and animations.
+Project Features
+Dynamic Letter Guessing:
 
-🔧 Here’s what I learned:
-	•	React fundamentals: JSX, components, props, and state
-	•	Dynamic UI building with reusable components and data-driven rendering
-	•	State management for responsive forms and interactivity
-	•	Handling side effects, data fetching, and using refs
-	•	Capstone projects like a custom Tenzies game and a multi-featured app (Assembly: Endgame) to put everything into practice
-	•	Best practices in structuring React apps, accessibility, and optimizing user experience
+Displays letters when guessed correctly.
+Tracks incorrect guesses visually on the keyboard.
+Keyboard Interaction:
 
-The course helped me build confidence and real-world problem-solving skills in React — from static pages to dynamic, fully interactive applications.
+Buttons dynamically update to reflect "correct" or "wrong" states.
+Disabled buttons prevent duplicate guesses.
+Language Elimination:
 
-Big thanks to @Scrimba for the incredibly practical and fun approach to learning React. This is just the beginning of what I’m building next. 💻✨
+Incorrect guesses "remove" a language visually from the list.
+Random farewell messages (e.g., "RIP, JavaScript!") are displayed for eliminated languages.
+Game Over Mechanic:
+
+Ends the game after exceeding the incorrect guess limit.
+Displays a "New Game" button to restart.
+Responsive Design:
+
+Optimized for various screen sizes for a great user experience.
+Installation
+Clone the repository:
+
+git clone https://github.com/yourusername/assembly-endgame.git
+cd assembly-endgame
+Install dependencies:
+
+npm install
+Start the development server:
+
+npm start
+Open your browser at http://localhost:3000 to play the game.
+
+Project Structure
+src/
+│
+├── components/         # React components
+│   ├── App.jsx         # Main component
+│   ├── Keyboard.jsx    # Letter keyboard component
+│   ├── GameStatus.jsx  # Displays game status (win/lose)
+│   └── Languages.jsx   # Programming languages visualization
+│
+├── utils/              # Utility functions
+│   └── getFarewellText.js # Generates farewell messages
+│
+├── assets/             # Static files (e.g., icons, images)
+│
+├── App.css             # Main stylesheet
+├── index.js            # Application entry point
+└── index.html          # Static HTML template
+How It Works
+Game Initialization:
+
+The game selects a random word.
+The user starts with 8 "lives" (number of languages).
+Game Loop:
+
+Players click a letter to guess.
+Correct guesses reveal the letter in the word.
+Incorrect guesses eliminate a language with a farewell message.
+End States:
+
+Win: All letters guessed correctly.
+Lose: More than 8 incorrect guesses.
+Features to Add
+Dynamic Word List:
+
+Support multiple random words instead of a hardcoded one.
+Score Tracking:
+
+Keep track of wins/losses across sessions.
+Hints:
+
+Provide optional hints for tricky words.
+Multiplayer Mode:
+
+Allow one player to set a custom word for another to guess.
+Credits
+This project was developed as part of Scrimba's Frontend Developer Path. A big thanks to the instructors and Scrimba community for their support.
