@@ -85,18 +85,5 @@ End States:
 
 Win: All letters guessed correctly.
 Lose: More than 8 incorrect guesses.
-Features to Add
-Dynamic Word List:
 
-Support multiple random words instead of a hardcoded one.
-Score Tracking:
-
-Keep track of wins/losses across sessions.
-Hints:
-
-Provide optional hints for tricky words.
-Multiplayer Mode:
-
-Allow one player to set a custom word for another to guess.
-Credits
 This project was developed as part of Scrimba's Frontend Developer Path. A big thanks to the instructors and Scrimba community for their support.
