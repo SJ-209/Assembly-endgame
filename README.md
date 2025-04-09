@@ -1,60 +1,72 @@
-Assembly Endgame
-Overview
+# Assembly Endgame
+
+## Overview
+
 Assembly Endgame is a word-guessing game inspired by the classic game Hangman. Developed as part of Scrimba's course project, the goal is to guess the hidden word within a limited number of attempts while avoiding incorrect guesses. Each incorrect guess "eliminates" a programming language, and the game is over when all languages are lost.
 
-Features
-Interactive word-guessing gameplay.
-Keyboard-based letter selection for a seamless user experience.
-Tracks correct and incorrect guesses dynamically.
-"Game Over" mechanic when too many incorrect guesses occur.
-Option to reset the game and start fresh.
-Random farewell messages for eliminated programming languages.
-How to Play
-A random programming-related word is selected (e.g., react).
-You start with all programming languages "active."
-Guess the word one letter at a time by clicking the displayed keyboard buttons.
-Correct Guesses: Revealed in the hidden word.
-Incorrect Guesses: A programming language is eliminated.
-Lose the game if you make too many incorrect guesses.
-Win the game by correctly guessing all letters in the word.
-Technologies Used
-React: For building the interactive UI.
-JavaScript: For game logic and dynamic rendering.
-CSS: For styling and animations.
-Project Features
-Dynamic Letter Guessing:
+## Features
 
-Displays letters when guessed correctly.
-Tracks incorrect guesses visually on the keyboard.
-Keyboard Interaction:
+• Interactive word-guessing gameplay.
+• Keyboard-based letter selection for a seamless user experience.
+• Tracks correct and incorrect guesses dynamically.
+• "Game Over" mechanic when too many incorrect guesses occur.
+• Option to reset the game and start fresh.
+• Random farewell messages for eliminated programming languages.
 
-Buttons dynamically update to reflect "correct" or "wrong" states.
-Disabled buttons prevent duplicate guesses.
-Language Elimination:
+## How to Play
 
-Incorrect guesses "remove" a language visually from the list.
-Random farewell messages (e.g., "RIP, JavaScript!") are displayed for eliminated languages.
-Game Over Mechanic:
+1. A random programming-related word is selected (e.g., react).
+2. You start with all programming languages "active."
+3. Guess the word one letter at a time by clicking the displayed keyboard buttons.
+4. Correct Guesses: Revealed in the hidden word.
+5. Incorrect Guesses: A programming language is eliminated.
+6. Lose the game if you make too many incorrect guesses.
+7. Win the game by correctly guessing all letters in the word.
 
-Ends the game after exceeding the incorrect guess limit.
-Displays a "New Game" button to restart.
-Responsive Design:
+## Technologies Used
 
-Optimized for various screen sizes for a great user experience.
-Installation
-Clone the repository:
+• React: For building the interactive UI.
+• JavaScript: For game logic and dynamic rendering.
+• CSS: For styling and animations.
 
-git clone https://github.com/yourusername/assembly-endgame.git
-cd assembly-endgame
-Install dependencies:
+## Project Features
 
-npm install
-Start the development server:
+1. Dynamic Letter Guessing:
 
-npm start
-Open your browser at http://localhost:3000 to play the game.
+	• Displays letters when guessed correctly.
+	• Tracks incorrect guesses visually on the keyboard.
 
-Project Structure
+2. Keyboard Interaction:
+	• Buttons dynamically update to reflect "correct" or "wrong" states.
+	• Disabled buttons prevent duplicate guesses.
+
+3. Language Elimination:
+	• Incorrect guesses "remove" a language visually from the list.
+	• Random farewell messages (e.g., "RIP, JavaScript!") are displayed for eliminated languages.
+
+4. Game Over Mechanic:
+	• Ends the game after exceeding the incorrect guess limit.
+	• Displays a "New Game" button to restart.
+
+5. Responsive Design:
+	•Optimized for various screen sizes for a great user experience.
+
+## Installation
+
+	Clone the repository:
+
+	git clone https://github.com/yourusername/assembly-endgame.git
+	cd assembly-endgame
+	Install dependencies:
+
+	npm install
+	Start the development server:
+
+	npm start
+	Open your browser at http://localhost:3000 to play the game.
+
+## Project Structure
+
 src/
 │
 ├── components/         # React components
@@ -71,7 +83,9 @@ src/
 ├── App.css             # Main stylesheet
 ├── index.js            # Application entry point
 └── index.html          # Static HTML template
-How It Works
+
+## How It Works
+
 Game Initialization:
 
 The game selects a random word.
