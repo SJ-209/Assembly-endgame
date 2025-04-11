@@ -95,6 +95,27 @@ export default function AssemblyEndgame() {
         farewell: !isGameOver && isLastGuessIncorrect
     })
 
+    const renderAttemptsLeft = () => {
+        const remainingAttempts = numGuessesLeft - wrongGuessCount
+        const className = clsx({
+            "red": remainingAttempts <= 3
+        }) 
+        console.log({
+            className,
+            languagesLength: languages.length,
+            condition: languages.length <= 3,
+            remainingAttempts: numGuessesLeft - wrongGuessCount
+        })
+        if (isGameOver) {
+            return null
+        }
+        return (
+            <p>
+                You have <span className={className}>{numGuessesLeft - wrongGuessCount}</span> attempts left.
+            </p>
+        )
+    }
+
     function renderGameStatus() {
         if (!isGameOver && isLastGuessIncorrect) {
             return (
@@ -147,8 +168,13 @@ export default function AssemblyEndgame() {
                 {renderGameStatus()}
             </section>
 
+
             <section className="language-chips">
                 {languageElements}
+            </section>
+
+            <section className="attempts-left">
+                {renderAttemptsLeft()}
             </section>
 
             <section className="word">

@@ -179,3 +179,15 @@ button.new-game {
     white-space: nowrap;
     border: 0;
 }
+
+section.attempts-left {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+section.attempts-left span.red {
+    color: #EC5D49;
+}
